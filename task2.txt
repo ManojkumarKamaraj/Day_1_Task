@@ -1,0 +1,56 @@
+Write a blog about objects and its internal representation in Javascript.
+
+Objects:-
+    Object is an entity that defines own property and it's value for example In Real Life 
+A Person is an example of an Object cause a person contain the properties like Name,Age,Eye-color
+etc.. and also those properties have their values like "john",5,"brown" we can define these as an
+objects
+
+Objects in Javascript:
+    In JavaScript, almost everything is an object
+    Booleans, Numbers, Strings, Dates, Maths, Regular expressions ,Arrays ,Functions 
+    Objects are variable too but objects can contain many values
+    
+    It is one of the most important DataType in JavaScript and it is different from 
+    primitive DataType(Booleans, Numbers, Strings,Null and undefined)
+
+    objects in JavaScript may be defined as an unordered collection of related data, of primitive or 
+    reference types, in the form of “key: value” pairs 
+        ex: like the person we mentioned above 
+
+Objects are variable:
+    in JavaScript objects are variable too but can contain many values and key value pair 
+    let name = "jhonwick"
+    here the Variable name value is defined as single property value 
+
+    if we define as an object refered to it's property-name and value and Property name are case sensitive 
+        ex : let person = {firstName:"Jhon", lastName:"Wick", age:50, eyeColor:"blue"};
+        person => object,
+        firstname=> property-name 
+        value=> "jhon"
+    we can define a different properties with different datatype 
+    Unassigned properties of an object are undefined (and not null).
+    person.DOB => undefined
+
+objects Methods:
+    Object Method can be refered/accessed with two methods 
+        i) .(dot)method
+        ii) [](Box)method
+    Iterate:
+        The iterator protocol defines how to produce a sequence of values from an object
+        using (for of/in)Methods
+        You can use the bracket notation with for...in to iterate over all the enumerable properties of an object
+
+        Example representation in Javascript
+                let person = {
+                                firstName: "Jhon",
+                                lastName: "wick",
+                                age:50,
+                                eyeColor:"blue"
+                                };
+                console.log(person.firstName) 
+                            or
+                console.log(person['firstName'])
+    Objects obove represent as object=> person
+                               Property-name=> firstName(Case-sensitive)
+                               property-vale=> Jhon

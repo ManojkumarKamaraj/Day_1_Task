@@ -1,0 +1,51 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2?
+
+HTTP stands for HyperText Transfer Protocol
+Introduction:-
+       Developed by Timothy Berners-Lee in 1989 as a communication standard for the World Wide Web.
+HTTP/1.1 which was created in 1997 and HTTP/2 was created in 2015 with most Development.
+it is used in client-server communication user sends 
+request to the server & the server sends the response to the user HTTP has a various version and 
+Development.
+
+Reason for HTTP2:
+  i.) HTTP/2 was developed over the SPDY protocol.(pronounced "speedy") 
+    is an obsolete open-specification communication protocol developed for transporting web content
+
+  ii.)HTTP/2 aims at simplifying, speeding up, and empowering the applications across the internet
+       To Achieve the same.the protocol emphasizes on page load time, resource optimization, 
+       and round-trip time (RTT) reduction.
+
+                    Difference Between HTTP1.1 and HTTP2:-
+
+HTTP1.1:-
+1. HTTP1.1 server using the method (GET/POST) and sends messages as plain text.
+
+2. There is a phenomenon that blocks all the requests behind it until it doesn’t get its all resources.
+   this connection will remain open,This phenomenon is called head-of-line blocking (HOL blocking)
+
+3. It uses requests resource Inlining for use getting multiple pages
+
+4. HTTP/1.1 uses formats like gzip to compress the data transferred in the messages
+   it gets larger due to the use of cookies or an increased number of requests.
+
+5. The flow control mechanism in HTTP/1.1 relies on the basic TCP connection,both the machines set their buffer sizes automatically.
+   If the receiver’s buffer is full, it shares the receive window details, telling how much available space is left
+
+HTTP2:-
+1. It works on the binary protocol.Binary protocols are intended to be read by a machine rather than a human being.
+   a binary protocol utilizes all values of a byte
+
+2. It allows multiplexing so one TCP connection is required for multiple requests.
+
+3. It uses PUSH frame by server that collects all multiple pages 
+    PUSH => If the server can predict what requests a client might want to make, 
+      the server can preemptively send request/response pairs to the client and warm its cache
+
+4. It uses HPACK for data compression.
+    HPACK=>  a compression format for efficiently representing HTTP header fields.
+
+5. It multiplexes data streams utilizing the same (one) TCP connection.
+   So, in this case, both machines can implement their flow controls instead of using the transport layer
+   The application layer shares the available buffer size data,the flow control mechanism does not need to wait for the signal
+   to reach its destination before modifying the receive window
